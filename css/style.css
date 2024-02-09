@@ -1,0 +1,196 @@
+/* Basic CSS resets -- leveling slight inconsistencies in browsers */
+html, body {
+	margin:0px;
+	padding:0px;
+	height:100%;
+}
+
+html {
+		/* Standard text-settings below */
+	font-size: 1em;
+    line-height: 1.4em;
+}
+
+
+
+
+/* Mobile First CSS: we'll design for phone sizes first, then add media queries for tablets and desktop computers later */
+
+body.Home {
+	background: rgb(235,235,235) url(../img/Background_.png);
+}
+body.about {
+    background: rgb(235, 235, 235)
+}
+
+#container {
+	
+}
+
+header h1 {
+    font-size: 10vw;
+    font-family: 'Poppins', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 800;
+}
+header h2 {
+    font-size: 5vw;
+     font-family: 'Poppins', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight:  1,400;
+}
+
+header, footer {
+    background: rgb(69, 92, 233);
+    Color: white;
+    padding: 1em;
+}
+
+main figure {
+    margin: 20px;
+}
+main h3 {
+    padding: 20px;
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+}
+main p {
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+    padding: 20px;
+    background: rgb(235, 235, 235);
+}
+main img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+    width: 100%;
+    max-width: 1000px;
+}
+
+nav ul {
+    list-style: none;
+    padding-left: 0px;
+ 
+}
+
+nav ul li {
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+}
+
+nav ul li a{
+    border: 1px solid rgb(17, 17, 17);
+    display: block;
+    text-decoration: none;
+    color: rgb(69, 92, 233);
+    text-align: center;
+    font-size: 2em;
+    padding: 0.25em;
+    background-color: rgb(212, 212, 212);
+    margin: 5px;
+}
+nav ul li a:hover{
+  background: rgb(255, 255, 255);
+}
+
+/* Class for making YouTube/Vimeo videos responsive */
+
+figure.responsive {
+    position: relative;
+    padding-bottom: 56.25%;  /* 16:9 */
+    height: 0px;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+figure.responsive iframe {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/* A better looking default horizontal rule */
+hr {
+    display: block;
+    height: 1px;
+    border: 0px;
+    border-top: 1px solid #ccc;
+    margin: 1em 0px;
+    padding: 0px;
+}
+
+
+
+/* ========================================
+MEDIA QUERIES!
+You can adjust the min-width numbers below, and add as many new media queries as you need.
+======================================== */
+
+
+/* Minimum width for iPads and tablets.  */
+@media all and (min-width: 481px) {
+	
+ 
+	
+	
+} /* closes 481px+ */
+
+
+
+/* Minimum width for laptops. */
+@media all and (min-width: 769px) {
+	
+    /*
+    nav ul{
+        display: flex;
+        flex-wrap: wrap;
+    }
+	
+	nav li {
+        flex: 1 1 175px;
+    }
+	*/
+
+#two-column {
+    display: flex;
+}
+
+nav {
+flex: 1;
+}
+
+main {
+flex: 2;
+}
+
+} /* closes 769px+ */
+
+
+
+/* Minimum width for desktop screens. */
+@media all and (min-width: 1024px) {
+	
+	
+	main {
+        flex: 3;
+        }
+    nav ul li a {
+        font-size: 1em;
+    }  
+    h3 {
+        margin-left: auto;
+        margin-right: auto;
+          width: 100%;
+          max-width: 1000px;
+    }  
+    main p {
+        max-width: 900px;
+        margin: auto;
+    }
+	
+} /* closes 1024px+ */
+
+
+
+
+
