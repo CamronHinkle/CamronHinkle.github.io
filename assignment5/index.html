@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>Dr. Jekyll's Laboratory</title>
+
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+
+<body>
+
+  <div id="container">
+
+    <header >
+      <h1 class="jekyll">Dr. Jekyll's Laboratory</h1>
+    </header>
+
+    <header >
+      <h1 class="evilheading">Mr. Hyde's Realm</h1>
+    </header>
+
+    <main>
+      <figure class="jekyll" id="center">
+        <img src="img/jekyllPotion.jpg" alt="Dr.Jekyll Potion" >
+        <figcaption>Image created using Bing Image Creator</figcaption>
+       </figure>
+       
+       <figure class="hyde" id="center">
+        <img src="img/hydePotion.jpg" alt="Mr.Hyde Potion" >
+        <figcaption>Image created using Bing Image Creator</figcaption>
+       </figure>
+
+       <button class="button">Drink Me!</button>
+      <p class="jekyll">
+        Step into the sanctum of Dr. Jekyll's Laboratory, where the delicate interplay of science and self-discovery
+        takes center stage. Join me, Dr. Henry Jekyll, on a profound journey into the mysteries of human nature.
+        Together, let us unravel the enigma of duality and explore the transformative power hidden within. At the
+        Laboratory of Self-Discovery, I offer you the key to unlocking your true potential. Join me as we navigate the
+        corridors of consciousness, where our duality can be redefined in pursuit of harmony, and the journey toward
+        personal liberation unfolds in the invigorating embrace of enlightenment.
+      </p>
+
+      <p class="hyde">
+        Step into the chaos that is Hyde's Realm, where societal norms crumble, and the intoxicating thrill of unbridled
+        freedom rules. Join me, Mr. Edward Hyde, to embrace the anarchy as we unleash the alter ego. Together, let's
+        venture into the abyss of experimentation, where rules are shattered, and the primal desires suppressed by
+        society come roaring to life. At Hyde's Realm of Unbridled Chaos, conformity is a distant memory. The journey
+        within beckons, urging you to unleash the beast and revel in the untamed darkness that defines us. Join me in
+        the celebration of rebellion, where societal shackles are discarded, and the path to liberation unfolds in the
+        exhilarating embrace of chaos.
+      </p>
+    </main>
+
+    <footer>
+      <p> &#169; Camron Hinkle, 2024 </p>
+      <p> Content written with the aid of ChatGPT and images created using Bing Image Creator</p>
+    </footer>
+
+  </div><!-- close "container" -->
+
+  <!-- Link to jQuery on Google CDN-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+
+  <!-- Write your jQuery code inside of the .ready() function below -->
+  <script>
+    $(document).ready(function () {
+
+  $('p.hyde').hide();
+  $('figure.hyde').hide();
+  $('h1.evilheading').hide();
+
+  $('button').click(function(){
+   $('h1.evilheading').fadeToggle(0);
+   $('h1.jekyll').fadeToggle(0);
+   $('p.hyde').fadeToggle();
+   $('p.jekyll').fadeToggle();
+   $('figure.hyde').fadeToggle(0);
+   $('figure.jekyll').fadeToggle(0);
+   $('body').toggleClass('evil');
+   $('main').toggleClass('bloodred');
+   $('button').toggleClass('evilheading');
+
+});//close button click
+
+    }); //close .ready()
+  </script>
+
+</body>
+
+</html>
