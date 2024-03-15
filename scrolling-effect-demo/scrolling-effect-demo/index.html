@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+  <meta charset="utf-8">
+
+  <!-- This matches the CSS width to the device width, and prevents forced overview without disabling zooming -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Glorious Sunset's | Camron Hinkle</title>
+
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+
+<body>
+
+  <div id="container">
+
+
+    <header>
+      <a href="#" class="logo">Glorious Sunsets</a>
+      <ul>
+        <li><a href="https://freakonomics.com/podcast/are-you-ready-for-a-glorious-sunset/">Freakonomics</a></li>
+        <li><a href="https://youtu.be/1wfeqDyMUx4?si=BLFI5K78IuMDs0Mk">Inspiration</a></li>
+      </ul>
+    </header>
+    <section id="Sunset">
+      <img src="img/background.png" id="background">
+      <img src="img/starsLittle.png" id="stars">
+      <img src="img/MoonColor.png" id="MoonColor">
+      <h2 id="text">Your Adventure Awaits</h2>
+      <img src="img/foreground.png" id="foreground">
+    </section>
+
+    <!--
+    <div id="cat1"></div>
+     
+  <section id="one">
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  </section>
+
+
+
+    <div id="cat2">
+      <h1>Welcome to Glorious Sunsets - Your Adventure Awaits</h1>
+    </div> -->
+    <section id="sec">
+      <h2>Welocme to Glorious Sunsets</h2>
+      <p>Are you ready to embark on a final journey filled with joy, purpose, and fulfillment? Look no further than
+        Glorious Sunsets - your ultimate destination for redefining what it means to leave a long-lasting legacy.
+        <br></br>At Glorious Sunsets, we believe that retirement isn't just about clocking out and fading away into the
+        background. It's about embracing a new chapter of life with open arms and seizing every opportunity to live life
+        to the fullest. Our mission is simple: we want you to spend your last years making the most of every moment and
+        not struggling with pain and hospital visits. Instead, save money and all the hassle and choose a meaningful,
+        pleasant end that can support your loved ones after you're gone.
+        Why choose Glorious Sunsets? Here's what sets us apart:<br></br>1. Personalized Planning: We understand that
+        everyone's vision of retirement is unique. That's why we offer
+        personalized planning services tailored to your individual goals, aspirations, and medical situation. Whether
+        you dream of traveling the world, pursuing a passion project, or simply spending quality time with loved ones,
+        we'll help you map out a plan to make it a reality.<br></br>2. Expert Guidance: With decades of experience in
+        the retirement industry, our team of experts is here to guide
+        you every step of the way. From navigating complex financial decisions to exploring new opportunities for
+        personal growth and fulfillment, we'll provide the support and guidance you need to make the best choice to
+        maximize your retirement years.<br></br>“We all want to take care of Mom. But the doctor says her treatments
+        might cost hundreds of thousands of
+        dollars. And even so, she'll never fully recover. We've got two kids to put through college."<br></br>Millions
+        of families are struggling with these same decisions. Now, a new health care plan puts you in control.
+        You can decide if medical treatments are right for you or your loved one. And if you decide to forego the
+        standard treatment, we'll put the money directly in your pocket, to use for whatever you need: college tuition,
+        a new house — or to take Mom on one last adventure, to soak up some glorious sunsets.<br></br>“Thanks to the
+        Glorious Sunset Healthcare Option, Mom won't have to suffer — and we can make decisions that
+        make sense for our family.”
+      </p>
+      <br></br>
+      <strong id="glow">Your adventure awaits - are you ready for a Glorious Sunset? Enroll today.
+      </strong>
+    </section>
+    <section id="Moon">
+      <img src="img/MoonBackgroundLarge.png" id="MoonBackgroundLarge">
+      <img src="img/MoonSmall.png" id="MoonSmall">
+      <img src="img/foregroundMoon.png" id="foregroundMoon">
+      <img src="img/MoonGround.png" id="MoonGround">
+    </section>
+
+<!-- 
+    <div id="cat3"></div>-->
+    <footer id="three">
+      <a href="https://www.w3schools.com/howto/howto_css_glowing_text.asp">Glow Effect</a>
+       Content created with windows Copilot and edited by &#169;Camron Hinkle, 2024
+    </footer>
+
+
+
+  </div><!-- close "container" -->
+<script>
+  let stars = document.getElementById('stars');
+  let MoonColor = document.getElementById('MoonColor');
+  let foreground = document.getElementById('foreground');
+  let text = document.getElementById('text');
+  let moonBackgroundLarge = document.getElementById('MoonBackgroundLarge');
+  let MoonSmall = document.getElementById('MoonSmall');
+  let foregroundMoon = document.getElementById('foregroundMoon');
+  let MoonGround = document.getElementById('MoonGround');
+
+  window.addEventListener('scroll', function(){
+    let value = window.scrollY;
+    let valueMoon = window.scrollY-1000;
+    stars.style.left = value * 0.2 + 'px'; 
+    MoonColor.style.top = value * 0.75 + 'px'; 
+    foreground.style.top = value * 0 + 'px'; 
+    text.style.marginRight = value * 4 + 'px'; 
+    text.style.marginTop = value * 1.1 + 'px'; 
+    text.style.fontSize = value * 0.28 + 'px'; 
+    moonBackgroundLarge.style.left = valueMoon * -0.05 + 'px'; 
+    MoonSmall.style.top = valueMoon * 0.3 + 'px'; 
+    moonBackgroundLarge.style.top = valueMoon * 0.1 + 'px'; 
+    foregroundMoon.style.top = valueMoon * 0.1 + 'px'; 
+    MoonGround.style.top = valueMoon * 0 + 'px'; 
+  })
+ 
+
+</script>
+  <!-- Link to jQuery on Google CDN-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+
+  <!-- Container for your jQuery code -->
+  <script>
+    $(document).ready(function () {
+
+      $(window).scroll(function () {
+
+        var windowPosition = $(window).scrollTop();
+
+        /*
+        if (windowPosition>1200) {
+            $('section').css('background', 'red');
+            }else {
+              $('section').css('background', 'black');
+      
+        }//close if/else conditional
+      */
+
+        if (windowPosition > 900) {
+          $('section').addClass('black');
+        } else {
+          $('section').removeClass('black');
+        }//close if/else
+
+        
+        var elementOfset = $('#glow').offset().top
+        var currentElementOffset = (elementOfset - windowPosition);
+
+        if (currentElementOffset < 200) {
+          $('#sec strong').addClass('glow');
+        } else {
+          $('#sec strong').removeClass('glow');
+        }//close if/else conditional
+        
+      
+    
+      });//close.scroll()
+
+
+    }); //close .ready()
+  </script>
+
+</body>
+
+</html>
